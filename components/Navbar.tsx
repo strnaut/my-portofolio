@@ -12,7 +12,7 @@ const Nav_items = [
 
 function Navbar() {
   return (
-    <nav className="bg-surface-a10 py-4">
+    <nav className="navbar sticky z-10 top-0 w-full py-4 bg-surface-a10/80 backdrop-blur-sm border-b border-surface-a20">
       <Container>
         <div className="flex flex-row items-center justify-between">
           <h1 className="text-xl font-bold text-white">
