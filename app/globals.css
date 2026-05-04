@@ -44,4 +44,15 @@
   --color-info-a0: #21498a;
   --color-info-a10: #4b6ca2;
   --color-info-a20: #7590ba;
+
+}
+
+@theme {
+  
+  --animate-bounce-slow: bounce 3s infinite ease-in-out;
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(-1%);}
+    50% { transform: none; }
+  }
 }
