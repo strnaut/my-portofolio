@@ -8,7 +8,7 @@ import { Social_links } from "@/data/data";
 
 function Hero() {
   return (
-    <section className="relative bg-surface-a0 text-white bg-[linear-gradient(to_right,#252525_1px,transparent_1px),linear-gradient(to_bottom,#252525_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[linear-gradient(to_bottom,black_85%,transparent_100%)]">
+    <section id="hero" className="relative bg-surface-a0 text-white bg-[linear-gradient(to_right,#252525_1px,transparent_1px),linear-gradient(to_bottom,#252525_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[linear-gradient(to_bottom,black_85%,transparent_100%)]">
       <Container>
         <div className="grid grid-cols-2 items-center min-h-[calc(100vh-60px)]">
           <div className="col-span-1 flex justify-center p-4">
