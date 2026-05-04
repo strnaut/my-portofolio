@@ -1,11 +1,11 @@
-import Container from "@/components/Container";
+import About from "@/components/section/About";
+import Hero from "@/components/section/Hero";
 
 function page() {
   return (
     <>
-      <Container>
-        <div>INI ISI MY KONTEN PORTO GWEHJ</div>
-      </Container>
+        <Hero />
+        <About />
     </>
   );
 }

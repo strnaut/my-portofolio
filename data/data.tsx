@@ -1,3 +1,5 @@
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+
 export const Nav_items = [
   { name: "Home", path: "/" },
   { name: "About", path: "#about" },
@@ -6,3 +8,24 @@ export const Nav_items = [
   { name: "Certifications", path: "/certifications" },
   { name: "Contact", path: "/contact" },
 ];
+
+export const Social_links =[
+    {
+        id: 1,
+        name: "Instagram",
+        url: "https://www.instagram.com/strnaut",
+        icon: <FaInstagram />,
+    },
+    {
+        id: 2,
+        name: "LinkedIn",
+        url: "https://www.Linkedin.com/in/farghali-syafyurrahman",
+        icon: <FaLinkedin />,
+    },
+    {
+        id: 3,
+        name: "Github",
+        url: "https://github.com/strnaut",
+        icon: <FaGithub />,
+    },
+]

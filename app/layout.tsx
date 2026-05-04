@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/section/Navbar";
 import "./globals.css";
 import { Poppins } from "next/font/google";
 
@@ -13,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-[#121212]">
-      <body className={`${poppins.className} font-sans antialiased text-white`}>
+    <html lang="en" className="bg-surface-a0">
+      <body className={`${poppins.className} font-sans antialiased text-white select-none`}>
         <Navbar />
         {children}
       </body>
