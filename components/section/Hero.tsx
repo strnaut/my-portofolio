@@ -16,11 +16,12 @@ function Hero() {
             <span className="absolute bg-radial from-primary-a40 to-primary-a0 z-0 w-120 h-120 mx-auto rounded-full -translate-y-7 blur-xs animate-bounce-slow" />
             <Image
               src="/photos/main-photo-no-bg.webp"
-              alt="main photo"
-              width={1000}
-              height={1000}
+              alt="Foto profil Farghali Syafyurrahman - Web Developer"
+              width={480}
+              height={480}
               className=" relative w-120 h-120 object-cover mx-auto z-10 mask-[linear-gradient(to_bottom,black_95%,transparent_100%)] drop-shadow-[-15px_6px_26px_rgba(0,0,0)]"
               priority
+              sizes="(max-width: 768px) 100vw, 480px"
               draggable={false}
             />
           </div>
@@ -85,6 +86,7 @@ function Hero() {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Kunjungi profil ${social.name} Farghali`}
                   className="text-surface-a30 hover:text-primary-a20 transition hover:-translate-y-0.5 duration-300 ease-in-out text-3xl"
                 >
                   {social.icon}

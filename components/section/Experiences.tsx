@@ -36,7 +36,7 @@ function Experiences() {
                   </span>
                 </div>
 
-                <p className="text-sm text-surface-a50 leading-relaxed text-justify line-clamp-4 group-hover:line-clamp-none transition-all duration-500">
+                <p className="text-sm text-white/80 leading-relaxed text-justify line-clamp-4 group-hover:line-clamp-none transition-all duration-500">
                   {exp.description}
                 </p>
 
