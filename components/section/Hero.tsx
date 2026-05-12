@@ -1,23 +1,21 @@
 "use client";
 
 import Image from "next/image";
-import Container from "../Container";
-import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
+import { TypeAnimation } from "react-type-animation";
 import { Social_links } from "@/data/data";
 
 function Hero() {
   return (
     <section
       id="hero"
-      className="relative bg-surface-a0 text-white bg-[linear-gradient(to_right,#252525_1px,transparent_1px),linear-gradient(to_bottom,#252525_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[linear-gradient(to_bottom,black_85%,transparent_100%)]"
+      className="relative flex items-center justify-center "
     >
-      <Container>
         <div className="grid grid-cols-2 items-center min-h-[calc(100vh-60px)]">
           <div className="col-span-1 flex justify-center p-4">
             <span className="absolute bg-radial from-primary-a40 to-primary-a0 z-0 w-120 h-120 mx-auto rounded-full -translate-y-7 blur-xs animate-bounce-slow" />
             <Image
-              src="/main-photo-no-bg.webp"
+              src="/photos/main-photo-no-bg.webp"
               alt="main photo"
               width={1000}
               height={1000}
@@ -27,19 +25,23 @@ function Hero() {
             />
           </div>
           <div className="col-span-1 flex flex-col justify-center p-4">
-            <h2 className="text-primary-a30 text-3xl font-medium mb-1">
+            <h2 className="text-primary-a20 text-3xl font-medium mb-1">
               Hi, I&apos;m
             </h2>
             <h1 className="group text-6xl font-bold mb-6 text-white cursor-default">
               <div>
-                <span className="group-hover:text-surface-a20 transition-colors duration-300 ease-in-out">Far</span>
-                <span className="group-hover:text-primary-a0 group-hover:animate-flicker transition-colors duration-300 ease-in-out ">
+                <span className="group-hover:text-surface-a20 transition-colors duration-300 ease-in-out">
+                  Far
+                </span>
+                <span className="group-hover:text-primary-a20 transition-all duration-300 ease-in-out group-hover:[text-shadow:0_0_25px_currentColor] group-hover:animate-flicker inline-block">
                   ghali
                 </span>
               </div>
-              <div className="ps-4 group-hover:text-surface-a20 transition-colors duration-300 ease-in-out">Syafyurrahman</div>
+              <div className="ps-4 group-hover:text-surface-a20 transition-colors duration-300 ease-in-out">
+                Syafyurrahman
+              </div>
             </h1>
-            <h2 className="text-primary-a30 text-4xl font-medium mb-4 h-10">
+            <h2 className="text-primary-a30 text-4xl font-mono mb-4 h-10">
               <TypeAnimation
                 sequence={[
                   "Web Developer",
@@ -55,7 +57,7 @@ function Hero() {
                 repeat={Infinity}
               />
             </h2>
-            <p className="text-md text-surface-a50 text-justify mb-6 bg-surface-a10/60 p-2 rounded-lg">
+            <p className="text-md text-surface-a50 text-justify mb-6 bg-surface-a10/60 p-2 ">
               Graduate of Information Technology from Brawijaya University.
               Possesses strong expertise in web development using PHP
               (Laravel/CodeIgniter) and JavaScript (React/Next.js). Experienced
@@ -63,20 +65,23 @@ function Hero() {
               technical documentation such as SDDs and BRDs.
             </p>
             <div className="flex flex-wrap gap-4 font-semibold mb-4 items-center">
-              <button className="text-surface-a0 px-4 py-2 bg-primary-a10 transition duration-300 rounded-lg hover:-translate-y-0.5 ease-in-out shadow-md hover:shadow-primary-a0/50">
+              <Link href="#projects" className="text-surface-a0 rounded-md px-4 py-2 bg-primary-a10 transition duration-300 hover:-translate-y-0.5 ease-in-out shadow-md hover:shadow-primary-a0/50">
                 View My Work
-              </button>
+              </Link>
               <Link
                 href="/files/CV_Farghali_Syafyurrahman_EN.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary-a20 px-4 py-2 bg-surface-a10 border border-primary-a30 transition duration-300 rounded-lg hover:-translate-y-0.5 ease-in-out shadow-md hover:shadow-primary-a0/50"
+                className="text-primary-a20 rounded-md px-4 py-2 bg-surface-a20 border border-primary-a30 transition duration-300 hover:-translate-y-0.5 ease-in-out shadow-md hover:shadow-primary-a0/50"
               >
                 View CV
               </Link>
-              {Social_links.map((social) => (
+              
+            </div>
+            <div className="flex flex-wrap gap-4 text-md text-surface-a50">
+                {Social_links.map((social) => (
                 <Link
-                  key={social.id}
+                  key={social.name}
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -88,7 +93,6 @@ function Hero() {
             </div>
           </div>
         </div>
-      </Container>
     </section>
   );
 }

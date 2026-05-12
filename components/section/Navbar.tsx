@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Container from "../Container";
 import { Nav_items } from "../../data/data";
+import Container from "../Container";
 
 function Navbar() {
   return (
@@ -8,7 +8,7 @@ function Navbar() {
       <Container>
         <div className="flex flex-row items-center justify-between">
           <h1 className="text-xl font-bold text-white">
-            <Link href="/">
+            <Link href="#">
               <span className="text-primary-a0">Farghali</span>&apos;s Space
             </Link>
           </h1>
