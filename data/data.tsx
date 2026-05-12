@@ -44,10 +44,10 @@ export const Skill_tools = [
   { name: "HTML", icon: "devicon:html5" },
   { name: "CSS", icon: "devicon:css3" },
   { name: "JavaScript", icon: "devicon:javascript" },
+  { name: "TypeScript", icon: "devicon:typescript" },
   { name: "React", icon: "devicon:react" },
   { name: "Next.js", icon: "devicon:nextjs" },
   { name: "Tailwind", icon: "devicon:tailwindcss" },
-  { name: "TypeScript", icon: "devicon:typescript" },
   { name: "Laravel", icon: "devicon:laravel" },
   { name: "CodeIgniter 4", icon: "logos:codeigniter-icon" },
   { name: "Python", icon: "devicon:python" },
@@ -62,7 +62,7 @@ export const Skill_tools = [
 
 export const projects = [
   {
-    name: "Portfolio Website",
+    name: "projek gelap",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: "/photos/project1.png",
@@ -71,7 +71,7 @@ export const projects = [
     theme: "dark",
   },
   {
-    name: "Project 2",
+    name: "Projek terang",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: "/photos/project2.png",
@@ -80,7 +80,7 @@ export const projects = [
     theme: "light",
   },
   {
-    name: "Project 3",
+    name: "Project mobile",
     description: "Description of Project 3",
     image: "/photos/project3.jpeg",
     url: "http://localhost:3000/",

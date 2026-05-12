@@ -5,16 +5,15 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="py-12 flex flex-col items-center justify-center "
+      className="py-24 flex flex-col items-center justify-center "
     >
-      <div className="flex items-center mb-16 gap-5 w-7xl">
-        <div className="grow h-px border border-primary-a50" />
-        <h1 className="text-4xl font-bold text-primary-a20 text-center ">
-          Skills & Tools
-        </h1>
-        <div className="grow h-px border border-primary-a50" />
+      <div className="flex flex-col items-center mb-16">
+        <h2 className="text-4xl font-bold text-white mb-2">
+          Skills & <span className="text-primary-a20">Tools</span>
+        </h2>
+        <div className="h-1 w-20 bg-primary-a20 rounded-full shadow-[0_0_10px_rgba(var(--primary-a20),0.5)]"></div>
       </div>
-      <div className="grid grid-cols-6 gap-4 pb-10">
+      <div className="grid grid-cols-6 gap-4">
         {Skill_tools.map((skill) => (
           <div
             key={skill.name}

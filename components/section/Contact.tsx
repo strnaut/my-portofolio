@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import Link from "next/link";
 
 const Contact = () => {
   const contactLinks = [
@@ -50,12 +51,12 @@ const Contact = () => {
             {/* SISI KIRI: Info Kontak */}
             <div className="space-y-6 flex flex-col justify-center">
               {contactLinks.map((link) => (
-                <a
+                <Link
                   key={link.label}
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-5 p-5 rounded-2xl bg-surface-a20 border border-white/5 hover:border-primary-a0/30 transition-all duration-300"
+                  className="group flex items-center gap-5 p-5 rounded-2xl bg-surface-a20/80 border border-white/5 hover:border-primary-a0/50 transition-all duration-300"
                 >
                   <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-a0 border border-white/10 group-hover:scale-110 group-hover:text-primary-a0 transition-all duration-300">
                     <Icon icon={link.icon} className="text-2xl" />
@@ -70,14 +71,11 @@ const Contact = () => {
                       {link.value}
                     </p>
                   </div>
-                </a>
+                </Link>
               ))}
             </div>
 
-            {/* SISI KANAN: CTA Card / Form-Alternative */}
-            <div className="relative group overflow-hidden rounded-3xl bg-linear-to-br from-primary-a0 to-surface-a0 border border-primary-a0/20 p-8 flex flex-col justify-between">
-              {/* Dekorasi Background */}
-              <div className="absolute -right-8 -top-8 w-32 h-32 bg-primary-a0 blur-[80px] opacity-20 group-hover:opacity-40 transition-opacity"></div>
+            <div className="relative group overflow-hidden rounded-3xl bg-linear-to-br from-primary-a0/80 to-surface-a0/80 border border-primary-a0/20 p-8 flex flex-col justify-between">         
 
               <div className="relative z-10">
                 <h3 className="text-2xl font-bold text-white mb-4">
@@ -90,13 +88,13 @@ const Contact = () => {
               </div>
 
               <div className="relative z-10">
-                <a
+                <Link
                   href="https://wa.me/62895392511022" // Ganti dengan nomor WA aslimu
                   className="inline-flex items-center gap-3 px-6 py-3 text-primary-a20 rounded-md bg-surface-a20 border border-surface-a30 transition duration-300 hover:-translate-y-0.5 ease-in-out shadow-md hover:shadow-primary-a0/50 hover:border-primary-a30"
                 >
                   <Icon icon="mdi:whatsapp" className="text-2xl" />
                   Say Hello via WhatsApp
-                </a>
+                </Link>
               </div>
             </div>
           </div>
